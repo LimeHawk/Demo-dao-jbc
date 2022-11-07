@@ -30,8 +30,18 @@ public class Program {
             System.out.println(obj);
         }
         
+        System.out.println("--- Test 3: Seller findAll ---- ");
         
+        list = sellerDao.findAll();
         
+        for(Seller obj : list){
+            System.out.println(obj);
+        }
+        
+        System.out.println("--- Test 4: Seller insert ---- ");
+        Seller newSeller = new Seller(null,"Greg" , "Greg@gmail.com", new Date(), 4000.0, department);
+        sellerDao.insert(newSeller);
+        System.out.println("Inserted! new id = " + newSeller.getId());
     }
     
 }
