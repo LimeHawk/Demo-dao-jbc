@@ -15,7 +15,7 @@ public class Program {
         
         System.out.println("--- Test 1: Seller findById ---- ");
         
-        SellerDao sellerDao = DaoFactory.createSellerDAo();
+        SellerDao sellerDao = DaoFactory.createSellerDao();
         
         Seller seller = sellerDao.findById(3);
         
